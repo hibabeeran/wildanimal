@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Alert System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Wildlife Alert System</h1>
+    </header>
+    <main>
+        <div id="map"></div>
+        <div id="report-form">
+            <h2>Report a Sighting</h2>
+            <form id="sighting-form">
+                <label for="animal-type">Animal Type:</label>
+                <select id="animal-type">
+                    <option value="elephant">Elephant</option>
+                    <option value="leopard">Leopard</option>
+                    <option value="bear">Bear</option>
+                </select>
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Enter location">
+                <button type="submit">Report</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
